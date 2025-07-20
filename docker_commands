@@ -1,0 +1,60 @@
+## Docker commands used to build the application 
+# TODO: insert the docker build command
+docker build -t techtrends .
+
+## Docker commands used to run the application
+# TODO: insert the docker run command
+docker run -d -p 7111:3111 techtrends
+
+## Docker commands used to get the application logs
+# TODO: insert the docker logs command
+docker logs 5e600d088b2a
+
+## Logs from the container running the TechTrends application
+# TODO: paste logs from the Docker container 
+* Serving Flask app 'app' (lazy loading)
+
+ * Environment: production
+
+   WARNING: This is a development server. Do not use it in a production deployment.
+
+   Use a production WSGI server instead.
+
+ * Debug mode: off
+
+WARNING:werkzeug:2025-07-20 16:54:07,775, * Running on all addresses.
+
+   WARNING: This is a development server. Do not use it in a production deployment.
+
+INFO:werkzeug:2025-07-20 16:54:07,775, * Running on http://172.17.0.2:3111/⁠ (Press CTRL+C to quit)
+
+INFO:werkzeug:2025-07-20 16:57:20,807,172.17.0.1 - - [20/Jul/2025 16:57:20] "GET / HTTP/1.1" 200 -
+
+INFO:werkzeug:2025-07-20 16:57:20,857,172.17.0.1 - - [20/Jul/2025 16:57:20] "GET /static/css/main.css HTTP/1.1" 200 -
+
+INFO:werkzeug:2025-07-20 16:57:20,909,172.17.0.1 - - [20/Jul/2025 16:57:20] "GET /favicon.ico HTTP/1.1" 404 -
+
+DEBUG:root:2025-07-20 16:57:30,522,Article 2020 CNCF Annual Report retrieved!
+
+INFO:werkzeug:2025-07-20 16:57:30,531,172.17.0.1 - - [20/Jul/2025 16:57:30] "GET /1 HTTP/1.1" 200 -
+
+INFO:werkzeug:2025-07-20 16:57:30,570,172.17.0.1 - - [20/Jul/2025 16:57:30] "GET /static/css/main.css HTTP/1.1" 304 -
+
+DEBUG:root:2025-07-20 16:57:35,956,Article CNCF Cloud Native Definition v1.0 retrieved!
+
+INFO:werkzeug:2025-07-20 16:57:35,958,172.17.0.1 - - [20/Jul/2025 16:57:35] "GET /5 HTTP/1.1" 200 -
+
+INFO:werkzeug:2025-07-20 16:57:35,994,172.17.0.1 - - [20/Jul/2025 16:57:35] "GET /static/css/main.css HTTP/1.1" 304 -
+
+DEBUG:root:2025-07-20 16:57:41,534,About page rendered
+
+INFO:werkzeug:2025-07-20 16:57:41,537,172.17.0.1 - - [20/Jul/2025 16:57:41] "GET /about HTTP/1.1" 200 -
+
+INFO:werkzeug:2025-07-20 16:57:41,565,172.17.0.1 - - [20/Jul/2025 16:57:41] "GET /static/css/main.css HTTP/1.1" 304 -
+
+INFO:werkzeug:2025-07-20 16:57:45,371,172.17.0.1 - - [20/Jul/2025 16:57:45] "GET /create HTTP/1.1" 200 -
+
+INFO:werkzeug:2025-07-20 16:57:45,414,172.17.0.1 - - [20/Jul/2025 16:57:45] "GET /static/css/main.css HTTP/1.1" 304 -
+
+INFO:werkzeug:2025-07-20 16:57:54,030,172.17.0.1 - - [20/Jul/2025 16:57:54] "GET /healthz HTTP/1.1" 200 -
+
