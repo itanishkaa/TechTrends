@@ -13,3 +13,7 @@ resources:
   limits:
     cpu: 500m
     memory: 128Mi
+
+image:
+  repository: itanishkaa/techtrends
+  tag: latest
